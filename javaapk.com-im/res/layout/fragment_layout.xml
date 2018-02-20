@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/framelayout_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <!-- 空的碎片布局,如果没有碎片的情况下默认加载空布局 -->
+    
+</FrameLayout>

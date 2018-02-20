@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:myNamespaces="http://schemas.android.com/apk/res/com.sdust.im"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.example.slippery.view.SlipperyMenu
+        android:id="@+id/id_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        myNamespaces:rightPadding="70dp" >
+
+        <LinearLayout
+            android:id="@+id/huadong_id"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <include layout="@layout/left_menu_layout" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <com.example.util.NoScrollViewPagerUtil
+                    android:id="@+id/ViewPage_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="9" >
+                </com.example.util.NoScrollViewPagerUtil>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/friendMessage_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/img_bottom"
+                        android:text="@string/message_string" />
+
+                    <Button
+                        android:id="@+id/friend_button_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/img_bottom"
+                        android:text="@string/friend_string" />
+
+                    <Button
+                        android:id="@+id/map_button_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/img_bottom"
+                        android:text="@string/map_string" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.example.slippery.view.SlipperyMenu>
+
+</RelativeLayout>
